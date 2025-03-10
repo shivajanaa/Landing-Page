@@ -1,0 +1,395 @@
+/* Fonts */
+
+
+
+@font-face {
+    font-family: "china";
+    src: url(./assets/3856NeueMachina.woff2);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    overflow-x:hidden ;
+   
+  
+}
+
+
+
+/* Section - 1 */
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1% 6%;
+
+}
+
+nav h1 {
+    font-size: 1.6em;
+}
+
+nav h1 i {
+    display: inline-block;
+    rotate: 45deg;
+
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+
+.navP2 {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+
+
+}
+
+.section1 button,  .sec3-P1 button {
+    padding: 15px 40px;
+    border: solid black 3px;
+    border-radius: 10px;
+    word-spacing: 1em;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 1em;
+
+
+
+}
+
+.content1{
+   
+    margin:1% 6%;
+    display: grid;
+    grid-template-columns: 44% 56%;
+    gap:5%;
+    
+    
+
+}
+.content1 h1{
+    font-family: "china";
+    /* padding:  1% 6%; */
+    font-size: 4.5em;
+    line-height: 1.2;
+}
+
+.contentP1 {
+   margin-top:5%;
+   padding:10% 1%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap:5%;
+    
+}
+.contentP1 p{
+    width:65%;
+    font-size: 18px;
+}
+
+
+.contentP1 button , .sec3-P1 button{
+    background-color: black;
+    color: white;
+    width: 20em;
+}
+.contentP2{
+    padding:2% 2%;
+}
+.contentP2 img{
+    height:80%;
+}
+
+
+
+/* LogoWheel */
+
+#logoWheel{
+
+    position: relative;
+ 
+ 
+    white-space: nowrap;
+    padding: 30px;
+    overflow-x:auto;
+    position:absolute;
+    z-index: 1;
+  
+ 
+}
+#logoWheel::-webkit-scrollbar{
+    display: none;
+}
+
+
+.logoWrapper{
+ 
+display: inline-block;
+     white-space: nowrap;
+     align-items: center;
+     animation: move;
+     animation-duration: 10s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     
+}
+
+
+.logoWrapper img{
+    display: inline-block;
+    height: 40px;
+    margin:0px 4em;
+   
+   
+   
+}
+#logoWheel .cover{
+    height: 200px;
+    width:20%;
+    background-color: white;
+    position:absolute;
+    z-index: 4;
+}
+
+@keyframes move {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+
+}
+
+
+/* Section - 2 */
+.sec2-P1, .sec4-p1{
+    margin-top:15%;
+  margin-bottom: 5%;
+    padding :1% 7%;
+    display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 4%;
+
+}
+.sec2-P1 h1, .sec4-p1 h1{
+    font-size: 3em;
+    padding:1px 5px;
+    background-color: #baff6b;
+    font-weight: 500;
+    display: inline-block;
+}
+.sec2-P1 p , .sec4-p1 p{
+    font-size: 1.1em;
+    width: 40%;
+}
+.sec2-P2{
+    padding:1% 8%;
+    height:100vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    gap:5%;
+}
+
+.sec2-P2   .container2{
+    border-radius: 45px;
+    background-color: black;
+}
+
+ .container1 {
+    padding:5% 5%;
+   display: grid;
+   grid-template-columns: 43% 43%;
+   gap:10%;
+    border-radius: 45px;
+   
+    border: solid black 4px;
+    box-shadow: 2px 8px ;
+ }
+ .container2{
+    padding:5% 5%;
+    display: grid;
+    grid-template-columns: 43% 43%;
+    gap:10%;
+    box-shadow: 2px 8px ;
+     border-radius: 45px;
+    
+    
+    
+
+ }
+
+ .container1 h1{
+
+    background-color: #baff6b;
+ }
+.container2 h1{
+    background-color: white;
+}
+.sec2-P2 div span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.container2 h4{
+    color:white;
+   
+}
+.container1  i{
+    
+    margin:5%;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+.container2  i{
+    
+    margin:5%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+.sec2-P2 img {
+    margin-top: 10%;
+}
+
+
+
+
+/* Section - 3 */
+
+.section3{
+    height: 50vh;
+  margin-top:20%;
+  padding:1% 6%;
+
+ 
+
+
+}
+.container{
+    width: 100%;
+    padding:2% 2%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap:30%;
+    background-color: #F3F3F3;
+    border-radius: 25px;
+}
+.sec3-P2 img{
+    height:90%;
+}
+
+
+.section3 .sec3-P1{
+    padding:3% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:6%;
+    
+}
+
+.section3 .sec3-P1 h1{
+    font-size: 2em;
+
+}
+.section3 .sec3-P1 p{
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+
+
+
+/* Section - 4 */
+
+.section4{
+    padding:1% 7%;
+    margin-bottom: 1%;
+}
+
+ .sec4-p2 {
+    height: 50vh;
+    width: 100%;
+    padding:4%;
+    background-color: rgb(1, 1, 1);
+    display: grid;
+    grid-template-columns: repeat(3, 34%);
+    color:white;
+    border-radius: 25px;
+    
+ 
+}
+.sec4-p2 span {
+    display: inline-block;
+    padding: 10% 19% 5% 19%;
+    border-right:solid white;
+    font-size: 1.1em;
+   
+
+}
+.sec4-p2 :nth-child(3){
+    border:none;
+}
+
+.sec4-p2 h4{
+    margin-top:2em;
+    font-weight: 500;
+    font-size: 1.3em;
+    align-items: center;
+    color: #baff6b;
+    
+
+}
+.sec4-p1 h1{
+    padding-right:-8%;
+}
+.sec4-p2 h4 i{
+    
+    padding-left:2%;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
